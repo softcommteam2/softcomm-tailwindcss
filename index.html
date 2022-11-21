@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta
-    name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
     <title>SoftComm</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
 </head>
 
 <body>
@@ -30,14 +30,14 @@
         <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
         <div>
             <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
-            <div class="flex flex-1 items-center">
+            <div class="flex flex-1 items-center" data-aos="fade-right">
                 <div class="flex w-full items-center justify-between md:w-auto">
                 <a href="#">
                     <span class="sr-only">Your Company</span>
                     <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false" onclick="document.getElementById('mobile-nav').style.display = 'block'">
+                    <button type="button" id="open-menu-btn" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <!-- Heroicon name: outline/bars-3 -->
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -46,7 +46,7 @@
                     </button>
                 </div>
                 </div>
-                <div class="hidden md:ml-10 md:block md:space-x-10">
+                <div class="hidden md:ml-10 md:block md:space-x-10 uppercase">
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About</a>
     
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Services</a>
@@ -58,7 +58,7 @@
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
                 </div>
             </div>
-            <div class="hidden text-right md:block">
+            <div class="hidden text-right md:block uppercase" data-aos="fade-left">
                 <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <a href="#" class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50">Get Code</a>
                 </span>
@@ -82,7 +82,7 @@
                     <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
                 </div>
                 <div class="-mr-2">
-                    <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" onclick="document.getElementById('mobile-nav').style.display = 'none'">
+                    <button type="button" id="close-menu-btn" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span class="sr-only">Close main menu</span>
                     <!-- Heroicon name: outline/x-mark close btn-->
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -91,7 +91,7 @@
                     </button>
                 </div>
                 </div>
-                <div class="space-y-1 px-2 pt-2 pb-3">
+                <div class="space-y-1 px-2 pt-2 pb-3 uppercase">
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">About</a>
     
                 <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Services</a>
@@ -112,12 +112,12 @@
             <div class="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
                 <h1>
                 <span class="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
-                    <span class="block text-gray-900">Bring your business</span>
-                    <span class="block text-indigo-600">to online</span>
+                    <span class="block text-gray-900" data-aos="fade-right">Bring your business</span>
+                    <span class="block text-indigo-600" data-aos="fade-left">to online</span>
                 </span>
                 </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.</p>
-                <div class="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl" data-aos="fade-right">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
+                <div class="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left" data-aos="fade-left">
                     <a href="#" class="mt-3 w-full rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center">Get Started</a>
                 </div>
             </div>
@@ -134,8 +134,8 @@
                 <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
                 <button type="button" class="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                     <span class="sr-only">Watch our video to learn more</span>
-                    <img class="w-full" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-                    <span class="absolute inset-0 flex h-full w-full items-center justify-center" aria-hidden="true">
+                    <img class="w-full" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" data-aos="fade-left">
+                    <span class="absolute inset-0 flex h-full w-full items-center justify-center" aria-hidden="true" data-aos="fade-left">
                     <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
                         <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
                         <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
@@ -154,7 +154,7 @@
     <div class="relative py-10 sm:py-20 lg:py-16">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="my-10">
-            <div class="relative">
+            <div class="relative" data-aos="fade-right">
                 <div class="absolute inset-0 flex items-center" aria-hidden="true">
                     <div class="w-80 border-t border-gray-300 mx-auto"></div>
                   </div>
@@ -162,10 +162,10 @@
                     <span class="bg-gray-50 px-2 text-xl font-bold text-gray-500">About Us</span>
                 </div>
             </div>
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl my-5">Who We Are</h2>
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl my-5" data-aos="fade-left">Who We Are</h2>
         </div>
 
-        <div class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+        <div class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl" data-aos="fade-right">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt tempore sequi eum deleniti saepe quae eos iusto dolores nobis perspiciatis doloribus odit, quod omnis debitis! Repudiandae adipisci dolores aspernatur?
         </div>
     </div>
@@ -176,7 +176,7 @@
     <div class="relative py-10 sm:py-20 lg:py-16">
         <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="my-10">
-            <div class="relative">
+            <div class="relative" data-aos="fade-right">
                 <div class="absolute inset-0 flex items-center" aria-hidden="true">
                     <div class="w-80 border-t border-gray-300 mx-auto"></div>
                     </div>
@@ -184,112 +184,139 @@
                     <span class="bg-gray-50 px-2 text-xl font-bold text-gray-500">Services</span>
                 </div>
             </div>
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-center my-5">What We Offer</h2>
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-center my-5" data-aos="fade-left">What We Offer</h2>
         </div>
-        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500" data-aos="fade-right">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
           <div class="mt-12">
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 pb-8 hover:shadow-xl hover:bg-indigo-500 hover:text-gray-200">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <!-- Heroicon name: outline/cloud-arrow-up -->
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight">Website Design</h3>
-                    <p class="mt-5 text-base">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. lorem</p>
+              
+              <div class="service-card-wrapper" data-aos="zoom-in">
+                <div class="service-card-icon relative top-6 z-10">
+                  <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-card relative z-0 overflow-hidden flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 py-8 hover:shadow-xl hover:text-gray-200 transition hover:duration-150 ease-in-out">
+                  <div class="-mt-6">                    
+                      <h3 class="mt-8 text-lg font-medium tracking-tight transition duration-0 hover:duration-5000">Website Design</h3>
+                      <p class="mt-5 text-base transition duration-0 hover:duration-5000">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. lorem</p>
+                      <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                          →
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
       
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 pb-8 hover:shadow-xl hover:bg-indigo-500 hover:text-gray-200">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <!-- Heroicon name: outline/lock-closed -->
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                        </svg>
-                      </span>
+              <div class="service-card-wrapper" data-aos="zoom-in">
+                <div class="service-card-icon relative top-6 z-10">
+                  <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                    <!-- Heroicon name: outline/lock-closed -->
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-card relative z-0 overflow-hidden flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 py-8 hover:shadow-xl hover:text-gray-200 transition hover:duration-150 ease-in-out">
+                  <div class="-mt-6">                    
+                    <h3 class="mt-8 text-lg font-medium tracking-tight transition duration-0 hover:duration-5000">Web Application </h3>
+                    <p class="mt-5 text-base transition duration-0 hover:duration-5000">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                    <div class="go-corner" href="#">
+                      <div class="go-arrow">
+                        →
+                      </div>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight">Web Application </h3>
-                    <p class="mt-5 text-base">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
                   </div>
                 </div>
               </div>
       
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 pb-8 hover:shadow-xl hover:bg-indigo-500 hover:text-gray-200">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <!-- Heroicon name: outline/arrow-path -->
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12c0-1.232.046-2.453.138-3.662a4.006 4.006 0 013.7-3.7 48.678 48.678 0 017.324 0 4.006 4.006 0 013.7 3.7c.017.22.032.441.046.662M4.5 12l-3-3m3 3l3-3m12 3c0 1.232-.046 2.453-.138 3.662a4.006 4.006 0 01-3.7 3.7 48.657 48.657 0 01-7.324 0 4.006 4.006 0 01-3.7-3.7c-.017-.22-.032-.441-.046-.662M19.5 12l-3 3m3-3l3 3" />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight">Company Profile Website</h3>
-                    <p class="mt-5 text-base">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+              <div class="service-card-wrapper" data-aos="zoom-in">
+                <div class="service-card-icon relative top-6 z-10">
+                  <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12c0-1.232.046-2.453.138-3.662a4.006 4.006 0 013.7-3.7 48.678 48.678 0 017.324 0 4.006 4.006 0 013.7 3.7c.017.22.032.441.046.662M4.5 12l-3-3m3 3l3-3m12 3c0 1.232-.046 2.453-.138 3.662a4.006 4.006 0 01-3.7 3.7 48.657 48.657 0 01-7.324 0 4.006 4.006 0 01-3.7-3.7c-.017-.22-.032-.441-.046-.662M19.5 12l-3 3m3-3l3 3" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-card relative z-0 overflow-hidden flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 py-8 hover:shadow-xl hover:text-gray-200 transition hover:duration-150 ease-in-out">
+                  <div class="-mt-6">                    
+                      <h3 class="mt-8 text-lg font-medium tracking-tight transition duration-0 hover:duration-5000">Company Profile Website</h3>
+                      <p class="mt-5 text-base transition duration-0 hover:duration-5000">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. lorem</p>
+                      <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                          →
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
       
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 pb-8 hover:shadow-xl hover:bg-indigo-500 hover:text-gray-200">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <!-- Heroicon name: outline/shield-check -->
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight">Ecommerce Web App</h3>
-                    <p class="mt-5 text-base">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+              <div class="service-card-wrapper" data-aos="zoom-in">
+                <div class="service-card-icon relative top-6 z-10">
+                  <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-card relative z-0 overflow-hidden flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 py-8 hover:shadow-xl hover:text-gray-200 transition hover:duration-150 ease-in-out">
+                  <div class="-mt-6">                    
+                      <h3 class="mt-8 text-lg font-medium tracking-tight transition duration-0 hover:duration-5000">Ecommerce Web App</h3>
+                      <p class="mt-5 text-base transition duration-0 hover:duration-5000">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. lorem</p>
+                      <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                          →
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
       
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 pb-8 hover:shadow-xl hover:bg-indigo-500 hover:text-gray-200">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <!-- Heroicon name: outline/cog -->
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight">Hosting & Domain</h3>
-                    <p class="mt-5 text-base">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+              <div class="service-card-wrapper" data-aos="zoom-in">
+                <div class="service-card-icon relative top-6 z-10">
+                  <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-card relative z-0 overflow-hidden flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 py-8 hover:shadow-xl hover:text-gray-200 transition hover:duration-150 ease-in-out">
+                  <div class="-mt-6">                    
+                      <h3 class="mt-8 text-lg font-medium tracking-tight transition duration-0 hover:duration-5000">Hosting & Domain</h3>
+                      <p class="mt-5 text-base transition duration-0 hover:duration-5000">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. lorem</p>
+                      <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                          →
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
       
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-indigo-100 px-6 pb-8 hover:shadow-xl hover:bg-indigo-500 hover:text-gray-200">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <!-- Heroicon name: outline/server -->
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.602H7.923a3.375 3.375 0 00-3.285 2.602l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m19.5 0a3 3 0 01-3 3H5.25a3 3 0 01-3-3m19.5 0a3 3 0 00-3-3H5.25a3 3 0 00-3 3m16.5 0h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight">Moodle (LMS)</h3>
-                    <p class="mt-5 text-base">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+              <div class="service-card-wrapper" data-aos="zoom-in">
+                <div class="service-card-icon relative top-6 z-10">
+                  <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.602H7.923a3.375 3.375 0 00-3.285 2.602l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m19.5 0a3 3 0 01-3 3H5.25a3 3 0 01-3-3m19.5 0a3 3 0 00-3-3H5.25a3 3 0 00-3 3m16.5 0h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="service-card relative z-0 overflow-hidden flow-root rounded-lg bg-indigo-100 text-gray-900 px-6 py-8 hover:shadow-xl hover:text-gray-200 transition hover:duration-150 ease-in-out">
+                  <div class="-mt-6">                    
+                      <h3 class="mt-8 text-lg font-medium tracking-tight transition duration-0 hover:duration-5000">Moodle (LMS)</h3>
+                      <p class="mt-5 text-base transition duration-0 hover:duration-5000">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. lorem</p>
+                      <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                          →
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -300,7 +327,7 @@
     <div class="relative py-10 sm:py-20 lg:py-16">
         <div class="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
             <div class="my-10">
-                <div class="relative">
+                <div class="relative" data-aos="fade-right">
                     <div class="absolute inset-0 flex items-center" aria-hidden="true">
                         <div class="w-80 border-t border-gray-300 mx-auto"></div>
                         </div>
@@ -308,15 +335,15 @@
                         <span class="bg-gray-50 px-2 text-xl font-bold text-gray-500">Team</span>
                     </div>
                 </div>
-                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl my-5">Meet Our Team</h2>
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl my-5" data-aos="fade-left">Meet Our Team</h2>
             </div>
           <div class="space-y-12">
-            <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
+            <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl" data-aos="fade-right">
               <p class="text-xl text-gray-500">Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet lectus sit pretium egestas vel mattis neque.</p>
             </div>
             <ul role="list" class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3">
               <li>
-                <div class="space-y-6">
+                <div class="team-card space-y-6" data-aos="zoom-in">
                   <img class="mx-auto h-40 w-40 rounded-md xl:h-56 xl:w-56 object-cover" src="assets/images/kta.jpg" alt="">
                   <div class="space-y-2">
                     <div class="space-y-1 text-lg font-medium leading-6">
@@ -345,7 +372,7 @@
                 </div>
               </li>
               <li>
-                <div class="space-y-6">
+                <div class="team-card space-y-6" data-aos="zoom-in">
                   <img class="mx-auto h-40 w-40 rounded-md xl:h-56 xl:w-56 object-cover" src="assets/images/yms.jpg" alt="">
                   <div class="space-y-2">
                     <div class="space-y-1 text-lg font-medium leading-6">
@@ -374,7 +401,7 @@
                 </div>
               </li>
               <li>
-                <div class="space-y-6">
+                <div class="team-card space-y-6" data-aos="zoom-in">
                   <img class="mx-auto h-40 w-40 rounded-md xl:h-56 xl:w-56 object-cover" src="assets/images/cm.jpg" alt="">
                   <div class="space-y-2">
                     <div class="space-y-1 text-lg font-medium leading-6">
@@ -403,7 +430,7 @@
                 </div>
               </li>
               <li>
-                <div class="space-y-6">
+                <div class="team-card space-y-6" data-aos="zoom-in">
                   <img class="mx-auto h-40 w-40 rounded-md xl:h-56 xl:w-56 object-cover" src="assets/images/lkk.jpg" alt="">
                   <div class="space-y-2">
                     <div class="space-y-1 text-lg font-medium leading-6">
@@ -432,7 +459,7 @@
                 </div>
               </li>
               <li>
-                <div class="space-y-6">
+                <div class="team-card space-y-6" data-aos="zoom-in">
                   <img class="mx-auto h-40 w-40 rounded-md xl:h-56 xl:w-56 object-cover" src="assets/images/mppa.jpg" alt="">
                   <div class="space-y-2">
                     <div class="space-y-1 text-lg font-medium leading-6">
@@ -471,7 +498,7 @@
     <div class="relative py-10 sm:py-20 lg:py-16">      
       <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="my-10">
-          <div class="relative">
+          <div class="relative" data-aos="fade-right">
               <div class="absolute inset-0 flex items-center" aria-hidden="true">
                   <div class="w-80 border-t border-gray-300 mx-auto"></div>
                   </div>
@@ -479,11 +506,11 @@
                   <span class="bg-gray-50 px-2 text-xl font-bold text-gray-500">Clients</span>
               </div>
           </div>
-          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-center my-5">Our Clients</h2>
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-center my-5" data-aos="fade-left">Our Clients</h2>
       </div>
-      <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+      <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500" data-aos="fade-right">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
         <!-- Swiper -->
-        <div class="swiper clientSwiper">
+        <div class="swiper clientSwiper" data-aos="zoom-in">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="dont delete this">
@@ -567,7 +594,7 @@
     <div class="relative py-10 sm:py-20 lg:py-16">
       <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
           <div class="my-10">
-              <div class="relative">
+              <div class="relative" data-aos="fade-right">
                   <div class="absolute inset-0 flex items-center" aria-hidden="true">
                       <div class="w-80 border-t border-gray-300 mx-auto"></div>
                       </div>
@@ -575,13 +602,13 @@
                       <span class="bg-gray-50 px-2 text-xl font-bold text-gray-500">Contact</span>
                   </div>
               </div>
-              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-center my-5">Get in Touch</h2>
+              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-center my-5" data-aos="fade-left">Get in Touch</h2>
           </div>
           <div class="absolute">
           <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
           </div>
           <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-          <div class="py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+          <div class="py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12" data-aos="zoom-in">
               <div class="mx-auto max-w-lg">
               <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Contact Info</h2>
               <p class="mt-3 text-lg leading-6 text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
@@ -616,7 +643,7 @@
               </dl>
               </div>
           </div>
-          <div class="py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+          <div class="py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12" data-aos="zoom-in">
               <div class="mx-auto max-w-lg lg:max-w-none">
                 <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
                   <div>
@@ -651,7 +678,7 @@
     <!-- py-10 sm:py-20 lg:py-16 -->
     <footer class="relative bg-indigo-600 text-gray-300 pb-10 sm:pb-20 lg:pb-16">
         <div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
-          <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+          <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer" data-aos="fade-right">
             <div class="px-5 py-2">
               <a href="#" class="text-base hover:text-white">About</a>
             </div>
@@ -672,7 +699,7 @@
               <a href="#" class="text-base hover:text-white">Contact</a>
             </div>
           </nav>
-          <div class="mt-8 flex justify-center space-x-6">
+          <div class="mt-8 flex justify-center space-x-6" data-aos="fade-left">
             <a href="#" class="hover:text-white">
               <span class="sr-only">Facebook</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -708,11 +735,12 @@
               </svg>
             </a>
           </div>
-          <p class="mt-8 text-center text-base">&copy; 2022 Softcomm Technology, Inc. All rights reserved.</p>
+          <p class="mt-8 text-center text-base" data-aos="fade-right">&copy; 2022 Softcomm Technology, Inc. All rights reserved.</p>
         </div>
     </footer>      
     <!-- footer end  -->
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
